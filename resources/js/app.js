@@ -1,3 +1,7 @@
+import Vue from 'vue';
+import VueRouter from 'vue-router';
+import TodoListComponent from './components/TodoListComponent.vue';
+
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
@@ -7,7 +11,7 @@
 require('./bootstrap');
 
 window.Vue = require('vue').default;
-
+Vue.use(VueRouter);                         //* これを忘れない！！
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue
@@ -27,6 +31,19 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
+const router = new VueRouter({
+    mode: 'history',
+    routes: [
+        {
+            path: '/',
+            name: 'Todo',
+            component: TodoListComponent
+        },
+    ]
+})
+
 const app = new Vue({
     el: '#app',
+    router:router
 });
+
