@@ -23,7 +23,7 @@
 </head>
 <body>
     <div id="app">
-        <example-component></example-component>
+        <p>hello</p>
         <router-view></router-view>
     </div>
     <script src="{{ mix('/js/app.js') }}" defer></script>
