@@ -9,7 +9,11 @@
         "prod": "npm run production",
         "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --config=node_modules/laravel-mix/setup/webpack.config.js",
         "heroku-postbuild": "npm run prod",
-        "postinstall": "npm run prod"
+        "serve": "vue-cli-service serve",
+        "build": "vue-cli-service build",
+        "lint": "vue-cli-service lint",
+        "postinstall": "yarn build",
+        "start": "node server.js"
     },
     "devDependencies": {
         "axios": "^0.21",
@@ -28,6 +32,7 @@
     },
     "dependencies": {
         "cross-env": "^7.0.3",
+        "express": "^4.17.1",
         "vue-router": "^3.5.2"
     }
 }
