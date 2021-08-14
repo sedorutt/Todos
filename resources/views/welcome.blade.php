@@ -20,12 +20,12 @@
             }
         </style>
 
+<script type="text/javascript" src="js/app.js" defer></script>
 </head>
 <body>
     <div id="app">
         <p>hello</p>
         <router-view></router-view>
     </div>
-    <script type="text/javascript" src="js/app.js" defer></script>
     </body>
 </html>
