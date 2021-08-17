@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
@@ -26,7 +26,7 @@
         <p>hello</p>
         <router-view></router-view>
     </div>
-    <script type="text/javascript" src="{ { assets('js/app.js') }  }" defer></script>
+    <script type="text/javascript" src="{{ assets('js/app.js') }}" defer></script>
     
     </body>
 </html>
