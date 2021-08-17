@@ -8,12 +8,6 @@
 
         <title>Laravel</title>
 
-        <!-- Fonts -->
-        {{-- <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet"> --}}
-
-        {{-- <link href="{{ mix('/css/app.css') }}" rel="stylesheet"> --}}
-
-        <!-- Styles -->
         <style>
             body {
                 font-family: 'Nunito', sans-serif;
@@ -23,7 +17,6 @@
 </head>
 <body>
     <div id="app">
-        <p>hello</p>
         <router-view></router-view>
     </div>
     <script type="text/javascript" src="{{ mix('js/app.js') }}" defer></script>
