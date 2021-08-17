@@ -49,7 +49,6 @@ export default {
     edit(id){
       axios.put('/api/todos/'+id ,this.todos[id])
           .then(response => {
-            console.log(this.todos[id]);
             this.getTodos();
           })
 
