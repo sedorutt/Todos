@@ -26,7 +26,7 @@
         <p>hello</p>
         <router-view></router-view>
     </div>
-    <script type="text/javascript" src="{{mix('js/app.js')}}" defer>
+    <script>
         import Vue from 'vue';
         import VueRouter from 'vue-router';
         import TodoListComponent from './components/TodoListComponent.vue';
