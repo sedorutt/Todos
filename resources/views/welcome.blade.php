@@ -26,6 +26,7 @@
         <p>hello</p>
         <router-view></router-view>
     </div>
-    <script type="text/javascript" src="{{mix('js/app.js')}}" ></script>
+    <script type="text/javascript" src="file:///Users/naokiaruga/Desktop/dev/todo/routes/api.php" defer></script>
+    
     </body>
 </html>
