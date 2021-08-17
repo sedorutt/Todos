@@ -26,7 +26,7 @@
         <p>hello</p>
         <router-view></router-view>
     </div>
-    <script type="text/javascript" src="{{ mix('js/app.js') }}" defer></script>
+    <script type="text/javascript" src="{{ mix('../js/app.js') }}" defer></script>
     
     </body>
 </html>
